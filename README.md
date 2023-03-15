@@ -6,7 +6,7 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 
 1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/).
 
-2. Clone this repository.
+2. Clone the [original repository](https://github.com/openai/openai-quickstart-python) .
 
 3. Navigate into the project directory:
 
@@ -20,6 +20,11 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    $ python -m venv venv
    $ . venv/bin/activate
    ```
+
+   > I created a new virtual ENV in Anaconda.  using:
+   > `conda install -c conda-forge openai`
+   > For this sample which is running on Flask,  you may need to install Flask manually via Anaconda.
+
 
 5. Install the requirements:
 
@@ -35,6 +40,9 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 
 7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
 
+   > Optionally, you can set System Env Varaibles if you're using Windows.
+   > to support the code: `openai.api_key = os.getenv("OPENAI_API_KEY")`
+
 8. Run the app:
 
    ```bash
@@ -42,3 +50,9 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    ```
 
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+
+
+
+See the workflow to understand the necessary steps and quickly get started:
+
+![workflow image](https://github.com/kikitaMoon/openai-quickstart-python/blob/master/GettingStarted.png)
