@@ -4,13 +4,14 @@ import openai
 from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
+# for private key, it's better to set it in System Env settings.
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 @app.route("/", methods=("GET", "POST"))
 def index():
     if request.method == "POST":
-        animal = request.form["animal"]
+        animal = request.form["animal"]     # the code that sends the actual API request
         response = openai.Completion.create(
             model="text-davinci-003",
             prompt=generate_prompt(animal),
@@ -21,7 +22,7 @@ def index():
     result = request.args.get("result")
     return render_template("index.html", result=result)
 
-
+# the function that generates the prompt that we were using above.
 def generate_prompt(animal):
     return """Suggest three names for an animal that is a superhero.
 
