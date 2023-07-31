@@ -1,6 +1,6 @@
-# READ ME
+# Wow Wow Magical Documentary Super Seeker
 
-## Wow Wow Magical Documentary Super Seeker
+## Summary
 
 > My own version of OpenAI API Quickstart - Python example app
 
@@ -10,34 +10,36 @@ It is based on the App used in the OpenAI API [quickstart tutorial](https://beta
 
 ## Look
 
-![App Screenshot](/screenshot.jpg)
+![App Screenshot](/img/screenshot.jpg)
+![App Screenshot](/img/screenshot2.jpg)
 
 ## Environments
 
 - OS: Mac 12.6.8
-- Python: 3.11.4
+- Python: 3.11.4 / Flask 
 - AnaConda: 4.12
-- 
 
 ## Setup
 
 1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/).
 
-2. Clone [this repo](https://github.com/kikitaMoon/OpenAI-Quickstart-Python) or the [original repository](https://github.com/openai/openai-quickstart-python).
+2. Clone [this repo](https://github.com/kikitaMoon/OpenAI-Quickstart-Python) or [the original](https://github.com/openai/openai-quickstart-python).
 
-3. Optionally, create a new virtual environment in AnaConda, e.g. `OpenAI`:
-
-   ```bash
-   $ python -m venv venv
-   $ . venv/bin/activate
-   ```
-
-
-
-4. Navigate into the project directory:
+3. Navigate into the project directory:
 
    ```bash
    $ cd openai-quickstart-python
+   ```
+
+4. Create a new virtual environment with AnaConda, e.g. named `OpenAI`. Activate it:
+
+   ```bash
+   (base) mhoehn1:~ kikitamoon$ conda activate OpenAI
+   (OpenAI) mhoehn1:~ kikitamoon$ conda env list
+   # conda environments:
+   #
+   base                     /Users/kikitamoon/opt/anaconda3
+   OpenAI                *  /Users/kikitamoon/opt/anaconda3/envs/OpenAI
    ```
 
 5. Install the requirements:
@@ -54,10 +56,10 @@ It is based on the App used in the OpenAI API [quickstart tutorial](https://beta
 
 7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
 
-   > Optionally, you can set System Env Varaibles if you're using Windows.
+   > Alternatively, set System Env Varaibles if you're using Windows.
    > to support the code: `openai.api_key = os.getenv("OPENAI_API_KEY")`
 
-8. Run the app:
+8.  Run the app:
 
    ```bash
    $ flask run
@@ -69,4 +71,4 @@ You should now be able to access the app at [http://localhost:5000](http://local
 
 See the workflow to understand the necessary steps and quickly get started:
 
-![workflow image](https://github.com/kikitaMoon/openai-quickstart-python/blob/master/GettingStarted.png)
+![workflow image](/img/workflow.png)
