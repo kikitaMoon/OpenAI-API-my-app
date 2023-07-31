@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <head>
-  <title>OpenAI Quickstart</title>
+  <title>Wow Wow Magical Documentary Super Seeker</title>
   <link
     rel="shortcut icon"
-    href="{{ url_for('static', filename='dog.png') }}"
+    href="{{ url_for('static', filename='logo.png') }}"
   />
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
-  <h3>Share me the coordinates</h3>
+  <img src="{{ url_for('static', filename='logo.png') }}" class="icon" />
+  <h3>哇哇神奇纪录片超级找找器</h3>
   <form action="/" method="post">
-    <input type="text" name="place" placeholder="Enter a place:" required />
-    <input type="submit" value="Generate coordinates" />
+    <input type="text" name="yourInput" placeholder="输入特征暗号" required />
+    <input type="submit" value="开始探测" />
   </form>
   {% if result %}
   <div class="result">{{ result }}</div>
