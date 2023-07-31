@@ -1,30 +1,44 @@
-# OpenAI API Quickstart - Python example app
+# READ ME
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
+## Wow Wow Magical Documentary Super Seeker
+
+> My own version of OpenAI API Quickstart - Python example app
+
+This is an example of documentary film seeker that utilizes OpenAI's [GPT-3.5 Turbo model](https://platform.openai.com/docs/models/gpt-3-5) to assist users in finding documentary films made by **BBC** or **National Geographic** based on their input queries. The app acts as an intelligent assistant that can understand user requests and provides relevant responses in both Chinese and English. This is also for my little boy.
+
+It is based on the App used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
+
+## Look
+
+![App Screenshot](/screenshot.jpg)
+
+## Environments
+
+- OS: Mac 12.6.8
+- Python: 3.11.4
+- AnaConda: 4.12
+- 
 
 ## Setup
 
 1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/).
 
-2. Clone the [original repository](https://github.com/openai/openai-quickstart-python) .
+2. Clone [this repo](https://github.com/kikitaMoon/OpenAI-Quickstart-Python) or the [original repository](https://github.com/openai/openai-quickstart-python).
 
-3. Navigate into the project directory:
-
-   ```bash
-   $ cd openai-quickstart-python
-   ```
-
-4. Create a new virtual environment:
+3. Optionally, create a new virtual environment in AnaConda, e.g. `OpenAI`:
 
    ```bash
    $ python -m venv venv
    $ . venv/bin/activate
    ```
 
-   > I created a new virtual ENV in Anaconda.  using:
-   > `conda install -c conda-forge openai`
-   > For this sample which is running on Flask,  you may need to install Flask manually via Anaconda.
 
+
+4. Navigate into the project directory:
+
+   ```bash
+   $ cd openai-quickstart-python
+   ```
 
 5. Install the requirements:
 
